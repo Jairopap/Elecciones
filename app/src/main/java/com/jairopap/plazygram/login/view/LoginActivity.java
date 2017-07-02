@@ -31,7 +31,8 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
         username = (TextInputEditText) findViewById(R.id.username);
         password = (TextInputEditText) findViewById(R.id.password);
         login    = (Button) findViewById(R.id.login);
-        progressbarLogin   = (Button) findViewById(R.id.progressbarLogin);
+        progressbarLogin   = (ProgressBar) findViewById(R.id.progressbarLogin);
+        hideProgresBar();
 
         presenter = new LoginPresenterImpl(this);
 
@@ -51,7 +52,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
     }
 
     @Override
-    public void disableImputs() {
+    public void disableInputs() {
         username.setEnabled(false);
         password.setEnabled(false);
         login.setEnabled(false);
@@ -69,7 +70,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
 
     @Override
     public void loginError(String error) {
-        Toast.makeText(this, "", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, getString(R.string.login_error)+ error, Toast.LENGTH_LONG).show();
     }
 
     @Override
