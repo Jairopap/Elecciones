@@ -18,7 +18,7 @@ public class LoginRepositoryImpl implements LoginRepository {
 
     @Override
     public void singIn(String username, String password) {
-        boolean success = false;
+        boolean success = true;
 
         if (success) {
             presenter.loginSuccess();

@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.jairopap.plazygram.R;
-import com.jairopap.plazygram.view.fragment.HomeFragment;
+import com.jairopap.plazygram.post.view.HomeFragment;
 import com.jairopap.plazygram.view.fragment.ProfileFragment;
 import com.jairopap.plazygram.view.fragment.SearchFragment;
 import com.roughike.bottombar.BottomBar;
