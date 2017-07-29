@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.jairopap.plazygram.view.CreateAccountActivity">
+    tools:context="com.jairopap.plazygram.login.view.CreateAccountActivity">
 
     <include layout="@layout/actionbar_toolbar"></include>
 
@@ -117,7 +117,7 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                android:id="@+id/join"
+                android:id="@+id/joinUs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/text_button_createaccount"

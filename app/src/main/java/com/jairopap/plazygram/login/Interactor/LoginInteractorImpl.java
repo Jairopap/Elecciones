@@ -1,5 +1,8 @@
 package com.jairopap.plazygram.login.Interactor;
 
+import android.app.Activity;
+
+import com.google.firebase.auth.FirebaseAuth;
 import com.jairopap.plazygram.login.presenter.LoginPresenter;
 import com.jairopap.plazygram.login.presenter.LoginPresenterImpl;
 import com.jairopap.plazygram.login.repository.LoginRepositoryImpl;
@@ -21,7 +24,7 @@ public class LoginInteractorImpl implements LoginInteractor{
     }
 
     @Override
-    public void singIn(String username, String password) {
-        repository.singIn(username, password);
+    public void singIn(String username, String password, Activity activity,FirebaseAuth firebaseAuth) {
+        repository.singIn(username, password, activity, firebaseAuth);
     }
 }
