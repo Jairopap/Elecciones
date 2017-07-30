@@ -36,7 +36,6 @@
                     android:layout_height="wrap_content"
                     android:hint="@string/hint_email"
 
-                    android:inputType="textPassword"
                     />
 
             </android.support.design.widget.TextInputLayout>
@@ -52,8 +51,7 @@
                     android:id="@+id/name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/hint_name"
-                    />
+                    android:hint="@string/hint_name" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -120,7 +118,7 @@
                 android:id="@+id/joinUs"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/text_button_createaccount"
+                android:text="@string/Create_Acount"
                 android:theme="@style/RaiseButtonDark"
 
                 />

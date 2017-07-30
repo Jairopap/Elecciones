@@ -25,10 +25,8 @@ public class CreateAccountActivity extends AppCompatActivity {
     private static final String TAG ="CreateAccountActivity";
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener; //si alguine entra error algo el escuchcas
-
     private Button btnJoinUs;
     private TextInputEditText edtEmail, edtPassword;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,7 +45,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){
                     Log.w(TAG, "Usuario Logeado" + firebaseUser.getEmail());
-                }else{
+                 }else{
                     Log.w(TAG, "Usuario no Logeado");
 
                 }
@@ -74,8 +72,9 @@ public class CreateAccountActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
                             Toast.makeText(CreateAccountActivity.this, "Cuenta Creada Exitosamente", Toast.LENGTH_SHORT).show();
+
                         }else {
-                            Toast.makeText(CreateAccountActivity.this, "Ocurrio Un error al crear la cuenta", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateAccountActivity.this, "Verifica tus datos y confirma tu contraseña", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });

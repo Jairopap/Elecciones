@@ -21,5 +21,7 @@
     <string name="hint_title">Titulo</string>
     <string name="hint_descriprion">Descripcion</string>
     <string name="text_button_createpost">CREAR POST</string>
+    <string name="Create_Acount">Crear Cuenta</string>
+    <string name="dontHaveAccount">No Tienes Cuenta</string>
 
 </resources>

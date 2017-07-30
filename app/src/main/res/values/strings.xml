@@ -1,25 +1,25 @@
 <resources>
-    <string name="app_name">60Presidente</string>
+    <string name="app_name">60ºPresidente</string>
     <string name="title_activity_referencia">ReferenciaActivity</string>
-    <string name="hint_username">Tu Nombre</string>
-    <string name="hint_password">Tu Contraseña</string>
-    <string name="text_button_login">Registrate</string>
-    <string name="dont_have_account">¿Aun no tienes Cuenta?</string>
-    <string name="create_here">. Crea una aqui</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="text_button_login">Inicia Sesion</string>
+    <string name="dont_have_account">No tienes cuenta?</string>
+    <string name="create_here">Crea una aqui.</string>
     <string name="hint_email">Correo Electronico</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_user">Usuario</string>
-    <string name="hint_confirm_password">Confirma tu contraseña</string>
-    <string name="text_button_createaccount">Unete</string>
-    <string name="toolbar_title_createaccount">, Crear Cuenta</string>
-    <string name="username_card">Jairo Pacanchique</string>
+    <string name="hint_confirm_password">Confirma la contraseña</string>
+
+    <string name="toolbar_title_createaccount">Crear Cuenta</string>
+    <string name="username_card">60ºPresidente</string>
     <string name="firstword_card">Hace </string>
     <string name="timecard_card">4 dias</string>
     <string name="linkeNumbercard_card">Me gusta</string>
-    <string name="tab_search">Buscar</string>
-    <string name="tab_home">Home</string>
-    <string name="tab_profile">Yo</string>
-
+    <string name="tab_search">Elige</string>
+    <string name="tab_home">Resultados</string>
+    <string name="tab_profile">Comunidad</string>
+    <string name="Create_Acount">Crear cuenta</string>
     <string name="login_error">Lo sentimos un error:</string>
 
 
@@ -34,4 +34,8 @@
     <string name="text_button_createpost">CREAR POST</string>
 
     <string name="facebook_app_id">198487450682572</string>
+
+    <string name="dontHaveAccount">No Tienes Cuenta</string>
+
+
 </resources>

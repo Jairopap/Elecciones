@@ -119,10 +119,10 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    presenter.loginSuccess();
                     Toast.makeText(LoginActivity.this, "Login Facebok Exitoso", Toast.LENGTH_SHORT).show();
+                    presenter.loginSuccess();
                 }else {
-                    Toast.makeText(LoginActivity.this, "Login Facebok NO Exitoso", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Login Facebok NO Exitoso FireBase", Toast.LENGTH_SHORT).show();
                 }
             }
         });
