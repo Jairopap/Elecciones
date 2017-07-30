@@ -17,7 +17,7 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="0.6">
+            android:layout_weight="0.7">
 
             <ImageView
                 android:id="@+id/logo"
@@ -31,7 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="0.4"
-            android:fillViewport="true">
+            android:fillViewport="true"
+            >
 
 
             <LinearLayout
@@ -39,6 +40,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 android:padding="@dimen/padding_horizontal_login">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="6dp" />
 
                 <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
@@ -79,14 +88,6 @@
 
                     />
 
-                <com.facebook.login.widget.LoginButton
-                    android:id="@+id/login_facebook"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="10dp"
-                    android:layout_marginTop="10dp" />
-
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -100,7 +101,8 @@
                         android:text="@string/dont_have_account"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/textsize_donthaveaccount"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        android:layout_alignBottom="@+id/createHere" />
 
                     <TextView
                         android:id="@+id/createHere"
@@ -111,7 +113,8 @@
                         android:text="@string/create_here"
                         android:textColor="@android:color/white"
                         android:textSize="@dimen/textsize_donthaveaccount"
-                        android:textStyle="bold" />
+                        android:textStyle="bold"
+                        />
 
                     <ProgressBar
                         android:id="@+id/progressbarLogin"

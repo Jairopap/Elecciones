@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Plazygram</string>
+    <string name="app_name">60Presidente</string>
     <string name="title_activity_referencia">ReferenciaActivity</string>
-    <string name="hint_username">Numbre de Usuario</string>
-    <string name="hint_password">Contraseña</string>
-    <string name="text_button_login">login</string>
-    <string name="dont_have_account">¿No tienes Cuenta?</string>
-    <string name="create_here">Crea una aqui</string>
-    <string name="hint_email">Correo</string>
+    <string name="hint_username">Tu Nombre</string>
+    <string name="hint_password">Tu Contraseña</string>
+    <string name="text_button_login">Registrate</string>
+    <string name="dont_have_account">¿Aun no tienes Cuenta?</string>
+    <string name="create_here">. Crea una aqui</string>
+    <string name="hint_email">Correo Electronico</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_user">Usuario</string>
-    <string name="hint_confirm_password">Confirmar Contraseña</string>
+    <string name="hint_confirm_password">Confirma tu contraseña</string>
     <string name="text_button_createaccount">Unete</string>
     <string name="toolbar_title_createaccount">, Crear Cuenta</string>
     <string name="username_card">Jairo Pacanchique</string>
@@ -20,7 +20,7 @@
     <string name="tab_home">Home</string>
     <string name="tab_profile">Yo</string>
 
-    <string name="login_error">Ocurrio este error:</string>
+    <string name="login_error">Lo sentimos un error:</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

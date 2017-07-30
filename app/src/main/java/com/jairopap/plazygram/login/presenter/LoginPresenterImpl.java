@@ -33,19 +33,17 @@ public class LoginPresenterImpl implements LoginPresenter {
 
     @Override
     public void loginSuccess() {
+
         loginView.goHome();
         loginView.hideProgresBar();
     }
 
     @Override
     public void loginError(String error) {
+
         loginView.enableInputs();
         loginView.hideProgresBar();
         loginView.loginError(error);
     }
 
-    @Override
-    public void singIn(String s, String s1, View.OnClickListener onClickListener) {
-
-    }
 }

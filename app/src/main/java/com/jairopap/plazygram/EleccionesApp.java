@@ -12,11 +12,11 @@ import com.google.firebase.auth.FirebaseUser;
  * Created by Administrador on 15/07/2017.
  */
 
-public class PlazygramApplication extends Application {
+public class EleccionesApp extends Application {
 
     private FirebaseAuth firebaseAuth;
     private static final String TAG ="CreateAccountActivity";
-    private FirebaseAuth.AuthStateListener authStateListener; //si alguine entra error algo el escuchcas
+    private FirebaseAuth.AuthStateListener authStateListener; //si alguien entra error algo el escuchcas
 
     @Override
     public void onCreate() {
@@ -32,7 +32,6 @@ public class PlazygramApplication extends Application {
                     Log.w(TAG, "Usuario Logeado" + firebaseUser.getEmail());
                 }else{
                     Log.w(TAG, "Usuario no Logeado");
-
                 }
             }
         };

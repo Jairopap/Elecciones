@@ -19,8 +19,6 @@ public class LoginRepositoryImpl implements LoginRepository {
     LoginPresenter presenter;
 
 
-
-
     public LoginRepositoryImpl(LoginPresenter presenter){this.presenter = presenter;}
 
     @Override

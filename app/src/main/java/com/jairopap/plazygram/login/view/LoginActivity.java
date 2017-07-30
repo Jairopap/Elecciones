@@ -64,6 +64,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
                 FirebaseUser firebaseUser = firebaseAuth.getCurrentUser();
                 if (firebaseUser != null){
                     Log.w(TAG, "Usuario Logeado" + firebaseUser.getEmail());
+                    presenter.loginSuccess();
                 }else{
                     Log.w(TAG, "Usuario no Logeado");
 
@@ -82,7 +83,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
                 singIn(username.getText().toString(), password.getText().toString());
 
                 }
@@ -94,6 +95,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
             public void onSuccess(LoginResult loginResult) {
                 Log.w(TAG, "Facebook Login Sucees Token:" + loginResult.getAccessToken().getApplicationId());
                         singInFacebookFirebase(loginResult.getAccessToken());
+                        presenter.loginSuccess();
             }
 
             @Override
@@ -117,7 +119,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()){
-                    goHome();
+                    presenter.loginSuccess();
                     Toast.makeText(LoginActivity.this, "Login Facebok Exitoso", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(LoginActivity.this, "Login Facebok NO Exitoso", Toast.LENGTH_SHORT).show();

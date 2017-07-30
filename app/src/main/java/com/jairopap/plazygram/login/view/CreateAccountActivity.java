@@ -18,6 +18,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.jairopap.plazygram.R;
+import com.jairopap.plazygram.login.presenter.LoginPresenter;
 
 public class CreateAccountActivity extends AppCompatActivity {
 
@@ -72,13 +73,14 @@ public class CreateAccountActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()){
-                            Toast.makeText(CreateAccountActivity.this, "Cuenta Creado Exitosamente", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(CreateAccountActivity.this, "Cuenta Creada Exitosamente", Toast.LENGTH_SHORT).show();
                         }else {
                             Toast.makeText(CreateAccountActivity.this, "Ocurrio Un error al crear la cuenta", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
     }
+
 
     public void showToolbar(String tittle, boolean upButton){
         Toolbar toolbar =(Toolbar) findViewById(R.id.toolbar);
