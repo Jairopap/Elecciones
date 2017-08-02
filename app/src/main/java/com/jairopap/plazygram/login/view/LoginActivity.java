@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity  implements LoginView{
     private LoginPresenter presenter;
     private CallbackManager callbackManager;
 
-    private static final String TAG ="LoginRepositoryImpl";
+    private static final String TAG ="LoginRepositoryImp";
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener authStateListener; //si alguine entra error algo el escuchcas
 

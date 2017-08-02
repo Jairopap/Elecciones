@@ -14,12 +14,12 @@ import com.jairopap.plazygram.login.presenter.LoginPresenterImpl;
  * Created by Administrador on 02/07/2017.
  */
 
-public class LoginRepositoryImpl implements LoginRepository {
+public class LoginRepositoryImp implements LoginRepository {
 
     LoginPresenter presenter;
 
 
-    public LoginRepositoryImpl(LoginPresenter presenter){this.presenter = presenter;}
+    public LoginRepositoryImp(LoginPresenter presenter){this.presenter = presenter;}
 
     @Override
     public void singIn(String username, String password, Activity activity, FirebaseAuth firebaseAuth) {

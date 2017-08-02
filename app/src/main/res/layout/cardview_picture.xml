@@ -81,7 +81,7 @@
                     android:id="@+id/likeNumberCard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/linkeNumbercard_card"
+                    android:text="@string/Yo_Elijo"
                     android:textColor="@android:color/white"
                     android:textSize="@dimen/firstword_texsizecard"
                     android:layout_marginLeft="@dimen/timecard_marginleft_card"

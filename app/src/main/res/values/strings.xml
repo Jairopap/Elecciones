@@ -5,7 +5,7 @@
     <string name="hint_password">Contraseña</string>
     <string name="text_button_login">Inicia Sesion</string>
     <string name="dont_have_account">No tienes cuenta?</string>
-    <string name="create_here">Crea una aqui.</string>
+    <string name="create_here">Crea una <b>aqui.</b></string>
     <string name="hint_email">Correo Electronico</string>
     <string name="hint_name">Nombre</string>
     <string name="hint_user">Usuario</string>
@@ -16,9 +16,12 @@
     <string name="firstword_card">Hace </string>
     <string name="timecard_card">4 dias</string>
     <string name="linkeNumbercard_card">Me gusta</string>
+
     <string name="tab_search">Elige</string>
     <string name="tab_home">Resultados</string>
     <string name="tab_profile">Comunidad</string>
+
+    <string name="title_elige">CANDIDATOS</string>
     <string name="Create_Acount">Crear cuenta</string>
     <string name="login_error">Lo sentimos un error:</string>
 
@@ -36,6 +39,8 @@
     <string name="facebook_app_id">198487450682572</string>
 
     <string name="dontHaveAccount">No Tienes Cuenta</string>
+
+    <string name="Yo_Elijo">Mi Eleccion</string>
 
 
 </resources>

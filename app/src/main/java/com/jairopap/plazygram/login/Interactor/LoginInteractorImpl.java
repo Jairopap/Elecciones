@@ -4,8 +4,7 @@ import android.app.Activity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.jairopap.plazygram.login.presenter.LoginPresenter;
-import com.jairopap.plazygram.login.presenter.LoginPresenterImpl;
-import com.jairopap.plazygram.login.repository.LoginRepositoryImpl;
+import com.jairopap.plazygram.login.repository.LoginRepositoryImp;
 import com.jairopap.plazygram.login.repository.LoginRepository;
 
 /**
@@ -19,7 +18,7 @@ public class LoginInteractorImpl implements LoginInteractor{
 
     public LoginInteractorImpl(LoginPresenter presenter){
         this.presenter =presenter;
-        repository = new LoginRepositoryImpl(presenter);
+        repository = new LoginRepositoryImp(presenter);
 
     }
 

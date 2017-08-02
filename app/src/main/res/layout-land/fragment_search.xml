@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mislugares.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="30dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_mostrar" />
+            <Button
+                android:id="@+id/button02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_preferencias" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_acerca_de" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_salir" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="n_acerca_de55" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_salir55" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_acerca_de44" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="on_salir44" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_acerca_de33" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="on_salir33" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_acerca_de12" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir22" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_acerca_de20" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_salir19" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_acerca_de18" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir17" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="accion_acerca_de16" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ion_salir15" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="on_acerca_de14" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="n_salir13" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ion_acerca_de12" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir11" />
+        </TableRow>        <TableRow>
+        <Button
+            android:id="@+id/button03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ccion_acerca_de10" />
+        <Button
+            android:id="@+id/button04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="cion_salir9" />
+    </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_acerca_de8" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_salir7" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_acerca_de6" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir5" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_acerca_de4" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir3" />
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="cion_acerca_de2" />
+            <Button
+                android:id="@+id/button04"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ccion_salir1" />
+        </TableRow>
+
+
+    </TableLayout>
+</android.support.v4.widget.NestedScrollView>

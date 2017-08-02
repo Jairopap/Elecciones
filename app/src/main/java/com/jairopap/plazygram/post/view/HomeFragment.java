@@ -122,7 +122,7 @@ public class HomeFragment extends Fragment {
     public void showToolbar(String tittle, boolean upButton, View view){
         Toolbar toolbar =(Toolbar) view.findViewById(R.id.toolbar);
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(tittle);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Candidatos");
         ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayHomeAsUpEnabled(upButton);
     }
 
