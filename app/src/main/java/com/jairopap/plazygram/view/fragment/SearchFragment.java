@@ -21,7 +21,9 @@ import android.view.ViewGroup;
 
 import com.jairopap.plazygram.R;
 import com.jairopap.plazygram.adapter.PictureAdapterRecyclerView;
+import com.jairopap.plazygram.adapter.ResultadoAdapterRecyclerView;
 import com.jairopap.plazygram.model.Picture;
+import com.jairopap.plazygram.model.Resultado;
 
 import java.io.File;
 import java.io.IOException;
@@ -46,26 +48,23 @@ public class SearchFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         showToolbar(getResources().getString(R.string.tab_search), false, view);
 
-        RecyclerView picturesRecycler = (RecyclerView) view.findViewById(R.id.pictureRecycler);
+        RecyclerView resultadosRecycler = (RecyclerView) view.findViewById(R.id.resultadoRecycler);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
 
 
-        picturesRecycler.setLayoutManager(linearLayoutManager);
+        resultadosRecycler.setLayoutManager(linearLayoutManager);
 
-        PictureAdapterRecyclerView pictureAdapterRecyclerView =
-                new PictureAdapterRecyclerView(buildPictures(), R.layout.cardview_picture, getActivity());
-        picturesRecycler.setAdapter(pictureAdapterRecyclerView);
+        ResultadoAdapterRecyclerView pictureAdapterRecyclerView =
+                new ResultadoAdapterRecyclerView(buildResultados(), R.layout.progresbar_card, getActivity());
+        resultadosRecycler.setAdapter(pictureAdapterRecyclerView);
         return view;
     }
-    public ArrayList<Picture> buildPictures(){
+    public ArrayList<Resultado> buildResultados(){
 
-        ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("@drawable/image", "Uriel Ramírez", "4 días", "3 Me Gusta"));
-
-        pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Juan Pablo", "3 días", "10 Me Gusta"));
-        pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Anahi Salgado", "2 días", "9 Me Gusta"));
-        return pictures;
+        ArrayList<Resultado> resultados = new ArrayList<>();
+        resultados.add(new Resultado("@drawable/tati",   "90", "60", "6566", "5645644"));
+        return resultados;
     }
 
     private void showToolbar(String tittle, boolean upButton, View view) {

@@ -6,28 +6,32 @@ package com.jairopap.plazygram.model;
 
 public class Resultado {
 
-    private String imagen_candidato;
-    private String progressBar ="0";
+    private String resultado;
+    private String progressBar;
     private String porcentaje_votos;
     private String nombre_candidato;
     private String partido_politico;
 
 
-    public Resultado(String imagen_candidato, String progressBar, String porcentaje_votos, String nombre_candidato, String partido_politico ) {
-        this.imagen_candidato = imagen_candidato;
+
+    public Resultado(String resultado, String progressBar, String porcentaje_votos, String nombre_candidato, String partido_politico) {
+
+        this.resultado =resultado;
+
         this.progressBar = progressBar;
         this.porcentaje_votos = porcentaje_votos;
         this.porcentaje_votos = nombre_candidato;
         this.nombre_candidato = partido_politico;
     }
 
-    public String getImagen_candidato() {
-        return imagen_candidato;
+    public String getResultado() {
+        return resultado;
     }
 
-    public void setImagen_candidato(String imagen_candidato) {
-        this.imagen_candidato = imagen_candidato;
+    public void setResultado(String resultado) {
+        this.resultado = resultado;
     }
+
 
     public String getProgressBar() {
         return progressBar;
@@ -60,5 +64,7 @@ public class Resultado {
     public void setPartido_politico(String partido_politico) {
         this.partido_politico = partido_politico;
     }
+
+
 }
 
