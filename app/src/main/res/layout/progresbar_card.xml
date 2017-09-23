@@ -1,11 +1,12 @@
-<android.support.design.widget.CoordinatorLayout
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:cardview="http://schemas.android.com/tools"
+    android:id="@+id/progressbar_Card"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.jairopap.plazygram.view.fragment.SearchFragment">
-
+    android:layout_height="wrap_content"
+    cardview:cardCornerRadius="@dimen/cornerradious_cardview">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,11 +22,16 @@
             android:layout_height="wrap_content">
 
 
+
             <ImageView
-                android:id="@+id/imagen_candidato"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                app:srcCompat="@drawable/tati" />
+
+                android:id="@+id/imageC"
+                android:layout_width="@dimen/ancho_progressbarcar"
+                android:layout_height="@dimen/height_progressbarcar"
+                android:background="@drawable/tati"
+                android:scaleType="centerCrop"
+
+                />
 
             <ProgressBar
                 android:id="@+id/progressBar"
@@ -35,16 +41,18 @@
                 android:layout_gravity="bottom"
                 android:max="100"
                 android:progress="0" />
-        <TextView
-            android:id="@+id/porcentaje_simbolo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="%"
-            android:textColor="@android:color/black"
-            android:textSize="20sp"
-            android:layout_gravity="right"
 
-            />
+
+            <TextView
+                android:id="@+id/porcentaje_simbolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="%"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+
+                />
 
             <TextView
                 android:id="@+id/porcentaje_votos"
@@ -61,26 +69,26 @@
                 android:id="@+id/nombre_candidato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:text="Nombre"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                android:layout_gravity="center_horizontal"
 
                 />
+
             <TextView
                 android:id="@+id/partido_politico"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:text="Partido"
                 android:textColor="@android:color/black"
                 android:textSize="20sp"
-                android:layout_gravity="center"
 
                 />
 
-
         </FrameLayout>
 
-    </LinearLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

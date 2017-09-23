@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jairopap.plazygram.post.view.HomeFragment">
+    tools:context="com.jairopap.plazygram.post.view.SearchFragment">
 
     <include layout="@layout/actionbar_toolbar"/>
 
@@ -13,19 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
         android:paddingLeft="@dimen/activity_horiozontal_margin"
         android:paddingRight="@dimen/activity_horiozontal_margin"
         android:paddingTop="@dimen/activity_vertical_margin"
-        >
-
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/resultadoRecycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:listitem="@layout/progresbar_card"
-            />
+            tools:listitem="@layout/progresbar_card" />
+
 
 
     </LinearLayout>

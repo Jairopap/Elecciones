@@ -111,10 +111,11 @@ public class HomeFragment extends Fragment {
     public ArrayList<Picture> buildPictures(){
 
         ArrayList<Picture> pictures = new ArrayList<>();
-        pictures.add(new Picture("@drawable/image", "Uriel Ramírez", "4 días", "3 Me Gusta"));
 
+        pictures.add(new Picture("@drawable/image", "Uriel Ramírez", "4 días", "3 Me Gusta"));
         pictures.add(new Picture("http://www.enjoyart.com/library/landscapes/tuscanlandscapes/large/Tuscan-Bridge--by-Art-Fronckowiak-.jpg", "Juan Pablo", "3 días", "10 Me Gusta"));
         pictures.add(new Picture("http://www.educationquizzes.com/library/KS3-Geography/river-1-1.jpg", "Anahi Salgado", "2 días", "9 Me Gusta"));
+
         return pictures;
     }
 

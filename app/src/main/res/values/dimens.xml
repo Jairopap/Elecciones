@@ -32,4 +32,6 @@
     <dimen name="margintop_usernametoolbarProfile">-100dp</dimen>
     <dimen name="limitY_usernametoolbarprofile">-250dp</dimen>
     <dimen name="margintoptargetY_usernametoolbarprofile">-5dp</dimen>
+    <dimen name="height_progressbarcar">70dp</dimen>
+    <dimen name="ancho_progressbarcar">70dp</dimen>
 </resources>

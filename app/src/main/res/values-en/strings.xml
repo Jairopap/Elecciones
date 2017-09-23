@@ -23,5 +23,6 @@
     <string name="text_button_createpost">CREAR POST</string>
     <string name="Create_Acount">Crear Cuenta</string>
     <string name="dontHaveAccount">No Tienes Cuenta</string>
+    <string name="tab_Resulatos">Resultados</string>
 
 </resources>
